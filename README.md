@@ -7,10 +7,12 @@ It basicially inserts a `M600` at the right position of your G-CODE.
 
 ##Features
 
-- minimalistic interface
-- 
+- simple, guided interface
+- command line support (only partial, yet)
+- makes multi-color-print with single-extruder printers easily possible
+- more features coming (see below)
 
-##Supported Printers
+###Supported Printers
 
 To check if your printer is able to that with your current firmware enter `M600` into your printing software (e.g. Pronterface). If it is supported the extruder will move up a bit, to a side, retract the filment, ask you to insert new filament and press the knob, and extrude some more filament (you can cancel this by pressing reset after the first move). You could also google or ask your manufactorer.
 
@@ -22,7 +24,7 @@ make the script executeable
 `chmod +x`
 
 
-run it! (replace gcode file by the path to your gcode-file)
+run it! (replace gcode file by the path to your gcode-file or skip it)
 
 `./ColorPrint.sh gcode-file`
 
